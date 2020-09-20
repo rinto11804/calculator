@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>calculator</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/3e7d311e75.js" crossorigin="anonymous"></script>
+</head>
+<body>
+     <div class="container">
+         <form action="" name="calculator">
+     <input type="text" name="display" id="input">
+     <ul class="row1">
+         <li><input type="button" value="%" class="button" onclick="calculator.display.value+='%'"></li>
+         <li><input type="button" value="C" class="button" onclick="calculator.display.value=''"></li>
+         <li><input type="button" value="/" class="button"onclick="calculator.display.value+='/'"></li>
+         <li><input type="button" value="" class="button" onclick="calculator.display.value=calculator.display.value.substr(0,calculator.display.value.length-1)"></li><i  id=" back"class="fas fa-backspace"></i>
+     </ul>
+     <ul class="row2">
+        <li><input  type="button" value="7" class="button"onclick="calculator.display.value+='7'"></li>
+        <li><input type="button" value="8"  class="button" onclick="calculator.display.value+='8'"></li>
+        <li><input type="button" value="9" class="button" onclick="calculator.display.value+='9'"></li>
+        <li><input type="button" value="x" class="button" onclick="calculator.display.value+='*'"></li>
+    </ul>
+    <ul class="row3">
+        <li><input type="button" value="4" class="button" onclick="calculator.display.value+='4'"></li>
+        <li><input type="button" value="5" class="button" onclick="calculator.display.value+='5'"></li>
+        <li><input type="button" value="6" class="button" onclick="calculator.display.value+='6'"></li>
+        <li><input type="button" value="-" class="button" onclick="calculator.display.value+='-'" ></li>
+    </ul>
+    <ul class="row4">
+        <li><input type="button" value="1" class="button" onclick="calculator.display.value+='1'"></li>
+        <li><input type="button" value="2" class="button" onclick="calculator.display.value+='2'"></li>
+        <li><input type="button" value="3" class="button" onclick="calculator.display.value+='3'"></li>
+        <li><input type="button" value="+" class="button" onclick="calculator.display.value+='+'"></li>
+    </ul>
+    <ul class="row5">
+        <li><input type="button" value="+/-" class="button" id="plusormins"></li>
+        <li><input type="button" value="0" class="button"onclick="calculator.display.value+='-'"></li>
+        <li><input type="button" value="." class="button"onclick="calculator.display.value+='.'"></li>
+        <li><input type="button" value="=" class="button"onclick="calculator.display.value=eval(calculator.display.value)"></li>
+    </ul>
+</form>
+     </div>
+    <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,89 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family:verdana;
+}
+body{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    min-height: 100vh;
+    background:#e3e4e7;
+}
+.container
+{
+    width: 35vh;
+    height: 63vh;
+    padding-top: 20px;
+    border-radius: 20px;
+    background: #e3e4e7;
+    box-shadow:2px 2px 8px rgba(0, 0, 0, 0.24) ,
+    -2px -2px 4px rgb(255, 255, 255) ;
+}
+#input{
+    text-align: end;
+    outline: none;
+    width: 30vh;
+    height: 10vh;
+    border: none;
+    font-size: 3vh;
+    font-weight: 400;
+    border-radius: 10px;
+    box-shadow:2px 2px 8px rgba(0, 0, 0, 0.05) ,
+    -2px -2px 8px rgba(255, 255, 255, 0.493) ;
+}
+ul li{
+    list-style: none;
+    margin-right:20px;
+}
+.button{
+    font-weight: bolder;
+    font-size:2vh ;
+    outline: none;
+    width: 5vh;
+    height: 5vh;
+    border: none;
+    background: #e3e4e7;
+    border-radius: 20px;
+    box-shadow:2px 2px 8px rgba(0, 0, 0, 0.185),
+    -2px -2px 6px rgba(255, 255, 255, 0.87) ;
+}
+.button:active{
+    transition-delay: 3s;
+    transition:  3s all;
+    box-shadow: inset 2px 2px 8px rgba(0, 0, 0, 0.144),
+    inset -2px -2px 6px rgba(255, 255, 255, 0.87) ;
+}
+.fas 
+{
+    position: absolute;
+    top: 17.1pc;
+    left: 20.7pc;
+}
+.row1
+{
+    margin: 30px;
+    display: flex;
+}
+.row2
+{
+    margin: 30px;
+    display: flex;
+}
+.row3
+{
+    margin: 30px;
+    display: flex;
+}
+.row4
+{
+    margin: 30px;
+    display: flex;
+}
+.row5
+{
+    margin: 30px;
+    display: flex;
+}
